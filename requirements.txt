@@ -1,2 +1,4 @@
-kafka-python
+pandas
 psycopg2
+sqlalchemy
+kafka-python
