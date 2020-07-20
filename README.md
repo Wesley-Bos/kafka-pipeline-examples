@@ -25,7 +25,7 @@
    
    *"Confluent Control Center is a web-based tool for managing and monitoring Apache Kafka®. Control Center facilitates building and monitoring production data pipelines and streaming applications."*
 
-## Source and Sink with Kafka using PostgreSQL
+## [Source and Sink with Kafka using PostgreSQL](https://github.com/Wesley-Bos/kafka-pipeline-examples/tree/master/source-sink)
 1. Run the docker-compose.yml file:
 
         docker-compose -f docker-compose.yml up -d
@@ -48,15 +48,15 @@
          numbers=# \l
    * View the data:
    
-         numbers=# 
+         numbers=# SELECT * FROM "COUNTER" LIMIT 1;
 4. Create a **source** connector:
   
-       ./connect.sh
+       ./source_connector.sh
    When the connector is successfully created, the message "HTTP/1.1 201 Created" will be shown in the terminal.
    The status of the connectors can also be viewed in the [Control Center](http://localhost:9021).
 5. Create a **sink** connector:
   
-        ./delete_sink.sh
+        ./sink_connector.sh
    When the connector is successfully created, the message "HTTP/1.1 201 Created" will be shown in the terminal.
 6. Go back to the Postgres database and view all tables for the database numbers. The table 'P_COUNTER' should be added. 
     
