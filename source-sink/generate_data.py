@@ -11,7 +11,7 @@ if __name__ == '__main__':
         df = pd.DataFrame(data, index = [index])       
         print(f"Sending data : {data}")
 
-        df.to_sql('COUNTER', connection, if_exists='append') 
+        df.to_sql('NUMBER', connection, if_exists='append') 
         index += 1
         sleep(5)
 
