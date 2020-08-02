@@ -7,7 +7,7 @@ curl -i -X PUT http://localhost:8083/connectors/SINK_POSTGRES/config \
             "connection.password":"password",
             "insert.mode":"insert",
 	    "auto.create":true,
-	    "topics":"P_COUNTER",
+	    "topics":"P_NUMBER",
 	    "tasks.max":1
 
         }'
