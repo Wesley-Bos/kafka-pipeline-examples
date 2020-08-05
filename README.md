@@ -1,4 +1,6 @@
 # kafka-pipeline-examples
+View [my blogpost](https://medium.com/@wesleybos99/your-first-data-pipeline-with-kafka-8ed9728e37b0?source=friends_link&sk=535e6b34af8889002b816d0b3802fcc7) to setup the data pipelines while getting some more information regarding Kafka.
+
 **Prerequisites**
 * This project uses Docker and docker-compose. View [this link](https://docs.docker.com/compose/install/) to find out how to install them for your OS.
 
