@@ -4,8 +4,9 @@ View [my blogpost](https://medium.com/@wesleybos99/your-first-data-pipeline-with
 **Prerequisites**
 * This project uses Docker and docker-compose. View [this link](https://docs.docker.com/compose/install/) to find out how to install them for your OS.
 
-* Before we begin, create a new environment. I use Anaconda to do this but feel free to use any tool of your liking.     Activate the environment and install the required libraries by executing the following command:
-        
+* Before we begin, create a new environment. I use Anaconda to do this but feel free to use any tool of your liking.     Activate the environment and install the required libraries by executing the following commands:
+
+        sudo apt-get install python-psycopg2
         pip install -r requirements.txt
 **Note:** depending on your pip and Python version, the commands differ a little:
 * pip becomes pip3
