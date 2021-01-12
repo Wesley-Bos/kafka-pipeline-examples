@@ -6,8 +6,13 @@ View [my blogpost](https://medium.com/@wesleybos99/your-first-data-pipeline-with
 
 * Before we begin, create a new environment. I use Anaconda to do this but feel free to use any tool of your liking.     Activate the environment and install the required libraries by executing the following commands:
 
-        sudo apt-get install python-psycopg2
+        pip install psycopg2
         pip install -r requirements.txt
+  If an error would arise, when trying to install 'psycopg2', stating *"Error: pg_config executable not found."*, execute the following command:
+        
+        sudo apt install libpq-dev
+  
+        
 **Note:** depending on your pip and Python version, the commands differ a little:
 * pip becomes pip3
 * python become python3
